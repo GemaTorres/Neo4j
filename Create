@@ -1,0 +1,9 @@
+CREATE (MiNodo): un nodo simple
+CREATE (MiNodo1), (MiNodo2): múltiples nodos.
+CREATE (Andres:Persona): crea el nodo Andres con la etiqueta Persona.
+CREATE (Andres:Persona:Padre:Hijo:Prestamista): crea el nodo Andres con las etiquetas Persona, Padre, Hijo y Prestamista.
+CREATE (Andres:Persona { name: “Andres Fabricio”, age: 21, nacionality: “Spain” }): crea el nodo Andres con la etiqueta Persona y las propiedades name,
+age y nacionality.
+CREATE (Andres:Persona { name: “Andres Fabricio”, age: 21, nacionality:
+“Spain” }) RETURN Andres: después de crear el nodo lo retorna para su visualización.
+MATCH (n) RETURN n: visualiza todos los nodos 𝑛𝑛 creados (cuidado: todos los nodos creados).
